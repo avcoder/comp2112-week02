@@ -165,8 +165,8 @@
           <div class="bg-white shadow">
             <ul class="flexblock reasons">
               <li>
-                <h2>ES6 arrow functions, .map(), </h2>
-                <p>Also review: objects, querySelectorAll, push, pop, shift, unshift</p>
+                <h2>ES6 arrow functions, .map(), embedded template strings</h2>
+                <p>Also review: objects, querySelectorAll, push, pop, shift, unshift, .join</p>
               </li>
               <li>
                 <h2>data-/dataset, ES6 spread operator</h2>
@@ -237,11 +237,11 @@
                 <strong>Review: objects</strong>
               </h3>
               <ul class="flexblock reasons">
-                <li class="text-intro">How do you create objects?</li>
-                <li class="text-intro">How do you create a new key/value to an existing object? Add iq:187</li>
-                <li class="text-intro">How do you access a particular nested key/value?</li>
-                <li class="text-intro">How do you delete a particular key/value from an existing object?</li>
-                <li class="text-intro">How do you create a method in an object? this? shortened way?</li>
+                <li>How do you create objects?</li>
+                <li>How do you create a new key/value to an existing object? Add iq:187</li>
+                <li>How do you access a particular nested key/value?</li>
+                <li>How do you delete a particular key/value from an existing object?</li>
+                <li>How do you create a method in an object? this? shortened way?</li>
               </ul>
             </div>
             <!-- .end .column -->
@@ -269,12 +269,12 @@
                 <strong>ES6 Arrow functions</strong>
               </h3>
               <ul class="flexblock reasons">
-                <li class="text-intro">remove word 'function'</li>
-                <li class="text-intro">if only one parameter, then remove (parenthesis)</li>
-                <li class="text-intro">if 0 parameters or 2 or more parameters, then keep (parenthesis)</li>
-                <li class="text-intro">insert fat arrow => (not to be confused with comparison operator)</li>
-                <li class="text-intro">if only one return statement inside function block, then remove word 'return'</li>
-                <li class="text-intro">if more than one statement inside function block, use {} brackets</li>
+                <li>remove word 'function'</li>
+                <li>if only one parameter, then remove (parenthesis)</li>
+                <li>if 0 parameters or 2 or more parameters, then keep (parenthesis)</li>
+                <li>insert fat arrow => (not to be confused with comparison operator)</li>
+                <li>if only one return statement inside function block, then remove word 'return'</li>
+                <li>if more than one statement inside function block, use {} brackets</li>
               </ul>
               <p class="aligncenter">
                 <a href="https://github.com/getify/You-Dont-Know-JS/blob/master/es6%20%26%20beyond/fig1.png">YDKJS flowchart</a>
@@ -422,6 +422,44 @@
         <!-- .end .wrap -->
       </section>
 
+      <section class="bg-apple">
+        <!--.wrap = container (width: 90%) -->
+        <div class="wrap">
+          <div class="grid vertical-align">
+            <div class="column">
+              <p data-height="500" data-theme-id="0" data-slug-hash="wEjWXy" data-default-tab="html,result" data-user="avcoder" data-pen-title="map 2"
+                class="codepen">See the Pen
+                <a href="https://codepen.io/avcoder/pen/wEjWXy/">map 2</a> by A.V. (
+                <a href="https://codepen.io/avcoder">@avcoder</a>) on
+                <a href="https://codepen.io">CodePen</a>.</p>
+              <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+            </div>
+            <!-- .end .column -->
+            <div class="column">
+              <h3>
+                <strong>Revisit: .map()</strong>
+              </h3>
+              <ul class="flexblock reasons">
+                <li>
+                  <p>output HTML unordered list of the following people. If their admin status is true, then output '*' beside
+                    their name.</p>
+                </li>
+                <li>
+                  <p>instead of outputting '*', output a button that says 'Set to Admin' or 'Set to Editor'</p>
+                </li>
+                <li>
+                  <p>upon button click, change text to read the opposite of its depending on its truth value. Create a function
+                    called render() that displays the updated HTML. (Hint: is it a NodeList?)</p>
+                </li>
+              </ul>
+            </div>
+            <!-- .end .column -->
+          </div>
+          <!-- .end .grid -->
+        </div>
+        <!-- .end .wrap -->
+      </section>
+
 
       <section class="bg-apple">
         <!--.wrap = container (width: 90%) -->
@@ -433,20 +471,21 @@
             <!-- .end .column -->
             <div class="column">
               <h3>
-                <strong>"hack" chapters.ca</strong>
+                <strong>In-class Exercise 2:
+                  <br> "hack" chapters.ca</strong>
               </h3>
               <ul class="flexblock reasons">
                 <li>
                   <code>const foods = ['fries', 'steak', 'apples', 'gravy', 'chicken', 'coffee', 'tea', 'popcorn', 'bread', 'peanuts', 'butter', 'tacos'];</code>
                 </li>
                 <li>
-                  <p class="text-intro">Using the console, replace each nav menu in chapters.ca to be one of the food items in our array above</p>
+                  <p>Using the console, replace each nav menu in chapters.ca to be one of the food items in our array above</p>
                 </li>
                 <li>
-                  <p class="text-intro">Dynamically add a data-myid attribute and set it to the array index of that item</p>
+                  <p>Dynamically add a data-myid attribute and set it to the array index of that item</p>
                 </li>
                 <li>
-                  <p class="text-intro">Change it so everytime the user clicks a nav item, console.log the menu name by accessing dataset.myid
+                  <p>Change it so everytime the user clicks a nav item, console.log the menu name by accessing dataset.myid
                     with your foods array</p>
                 </li>
               </ul>
